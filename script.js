@@ -1,22 +1,8 @@
-/* Exemplo de CSS com Media Queries para responsividade */
-body {
-    font-family: 'Arial', sans-serif; /* Define a fonte para todo o corpo do documento */
-    background-color: #f0f0f0; /* Cor de fundo */
-}
-
-.presidente {
-    cursor: pointer; /* Estilo do cursor como ponteiro para indicar clicabilidade */
-}
-
-#titulo {
-    color: #007BFF; /* Cor azul para o título */
-    font-size: 20px; /* Tamanho da fonte para o título */
-}
-
-/* Media Query para iPhone 15 Pro Max */
-@media only screen and (min-device-width: 428px) and (max-device-width: 926px) and (orientation: portrait) {
-    #titulo, #resposta {
-        font-size: 22px; /* Aumenta o tamanho da fonte para dispositivos maiores */
-        color: #ff6347; /* Cor mais viva */
+function trocarFoto() {
+    var imagem = document.getElementById('foto');
+    if (imagem.src.match('masaki-removebg-preview.png')) {
+        imagem.src = 'https://www.dropbox.com/scl/fi/whgy7n1e8g3hbinat96y6/rodrigo-removebg-preview.png?rlkey=lu0x2ha2dei3epawu0yjb8x07&st=9bs9npg9&dl=1'; // Link para a imagem do Rodrigo
+    } else {
+        imagem.src = 'https://www.dropbox.com/scl/fi/ntz1i6fajnpw67g0r4q7m/masaki-removebg-preview.png?rlkey=rk001hg5u68yh978kg9ps0csz&st=0mrvo9wj&dl=1'; // Volta para a imagem do Masaki
     }
 }
