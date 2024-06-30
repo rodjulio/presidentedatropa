@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.presidente {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.presidente:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
