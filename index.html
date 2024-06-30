@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <title>Clique no Presidente</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="presidente" onclick="trocarFoto()">
-        <img id="foto" src="https://www.dropbox.com/scl/fi/ntz1i6fajnpw67g0r4q7m/masaki-removebg-preview.png?rlkey=rk001hg5u68yh978kg9ps0csz&st=0mrvo9wj&dl=1" alt="Masaki">
-        <p id="titulo">Clique no presidente da tropa</p>
+    <div class="container">
+        <div class="header">
+            <h1>Clique no Presidente da Tropa</h1>
+        </div>
+        <div class="presidente" onclick="trocarFoto()">
+            <img id="foto" src="https://www.dropbox.com/scl/fi/ntz1i6fajnpw67g0r4q7m/masaki-removebg-preview.png?rlkey=rk001hg5u68yh978kg9ps0csz&st=0mrvo9wj&dl=1" alt="Masaki">
+            <p id="titulo">Clique no presidente da tropa</p>
+        </div>
+        <div id="resposta" style="margin-top: 20px;"></div>
     </div>
-    <div id="resposta" style="margin-top: 20px;"></div>
     <script src="script.js"></script>
 </body>
 </html>
